@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB5D869921C83BA600D3EFE9 /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5D869821C83BA600D3EFE9 /* PlanCell.swift */; };
+		BB736F7521A9D1F900CA264C /* PerkCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB736F7421A9D1F900CA264C /* PerkCardTableViewController.swift */; };
+		BB736F7721A9D26400CA264C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB736F7621A9D26400CA264C /* Main.storyboard */; };
+		BB736F7921A9D90600CA264C /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB736F7821A9D90600CA264C /* CardCell.swift */; };
+		BB86E84121C5DFE7004A3F64 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86E84021C5DFE7004A3F64 /* PlansViewController.swift */; };
+		BB86E84321C5E09A004A3F64 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86E84221C5E09A004A3F64 /* Plan.swift */; };
+		BBC6755D21C84321002FF910 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6755C21C84321002FF910 /* PersistanceService.swift */; };
+		BBC6756421C84816002FF910 /* PlanItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6756221C84816002FF910 /* PlanItems+CoreDataClass.swift */; };
+		BBC6756521C84816002FF910 /* PlanItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6756321C84816002FF910 /* PlanItems+CoreDataProperties.swift */; };
+		BBE8488C21ACB2C000F58086 /* DetailViewContollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE8488B21ACB2C000F58086 /* DetailViewContollerViewController.swift */; };
+		BBEA78A6219CF1800034639D /* Perk.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA78A5219CF1800034639D /* Perk.swift */; };
 		BBEEF8A8219B487500C26091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEEF8A7219B487500C26091 /* AppDelegate.swift */; };
-		BBEEF8AA219B487500C26091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEEF8A9219B487500C26091 /* ViewController.swift */; };
-		BBEEF8AD219B487500C26091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEEF8AB219B487500C26091 /* Main.storyboard */; };
 		BBEEF8B0219B487500C26091 /* Fallout_76_Survival_Guide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBEEF8AE219B487500C26091 /* Fallout_76_Survival_Guide.xcdatamodeld */; };
 		BBEEF8B2219B487600C26091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBEEF8B1219B487600C26091 /* Assets.xcassets */; };
 		BBEEF8B5219B487600C26091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEEF8B3219B487600C26091 /* LaunchScreen.storyboard */; };
@@ -35,10 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB5D869821C83BA600D3EFE9 /* PlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
+		BB736F7421A9D1F900CA264C /* PerkCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkCardTableViewController.swift; sourceTree = "<group>"; };
+		BB736F7621A9D26400CA264C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BB736F7821A9D90600CA264C /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		BB86E84021C5DFE7004A3F64 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
+		BB86E84221C5E09A004A3F64 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		BBC6755C21C84321002FF910 /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
+		BBC6756221C84816002FF910 /* PlanItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlanItems+CoreDataClass.swift"; path = "Fallout 76 Survival Guide/PlanItems+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BBC6756321C84816002FF910 /* PlanItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlanItems+CoreDataProperties.swift"; path = "Fallout 76 Survival Guide/PlanItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BBE8488B21ACB2C000F58086 /* DetailViewContollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewContollerViewController.swift; sourceTree = "<group>"; };
+		BBEA78A5219CF1800034639D /* Perk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perk.swift; sourceTree = "<group>"; };
 		BBEEF8A4219B487500C26091 /* Fallout 76 Survival Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fallout 76 Survival Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEEF8A7219B487500C26091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBEEF8A9219B487500C26091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BBEEF8AC219B487500C26091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBEEF8AF219B487500C26091 /* Fallout_76_Survival_Guide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fallout_76_Survival_Guide.xcdatamodel; sourceTree = "<group>"; };
 		BBEEF8B1219B487600C26091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBEEF8B4219B487600C26091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,6 +97,8 @@
 		BBEEF89B219B487500C26091 = {
 			isa = PBXGroup;
 			children = (
+				BBC6756221C84816002FF910 /* PlanItems+CoreDataClass.swift */,
+				BBC6756321C84816002FF910 /* PlanItems+CoreDataProperties.swift */,
 				BBEEF8A6219B487500C26091 /* Fallout 76 Survival Guide */,
 				BBEEF8BE219B487600C26091 /* Fallout 76 Survival GuideTests */,
 				BBEEF8C9219B487700C26091 /* Fallout 76 Survival GuideUITests */,
@@ -99,13 +119,20 @@
 		BBEEF8A6219B487500C26091 /* Fallout 76 Survival Guide */ = {
 			isa = PBXGroup;
 			children = (
-				BBEEF8A7219B487500C26091 /* AppDelegate.swift */,
-				BBEEF8A9219B487500C26091 /* ViewController.swift */,
-				BBEEF8AB219B487500C26091 /* Main.storyboard */,
+				BB736F7621A9D26400CA264C /* Main.storyboard */,
+				BB736F7421A9D1F900CA264C /* PerkCardTableViewController.swift */,
+				BBE8488B21ACB2C000F58086 /* DetailViewContollerViewController.swift */,
+				BB736F7821A9D90600CA264C /* CardCell.swift */,
+				BBEA78A5219CF1800034639D /* Perk.swift */,
+				BB86E84021C5DFE7004A3F64 /* PlansViewController.swift */,
+				BB5D869821C83BA600D3EFE9 /* PlanCell.swift */,
+				BB86E84221C5E09A004A3F64 /* Plan.swift */,
 				BBEEF8B1219B487600C26091 /* Assets.xcassets */,
 				BBEEF8B3219B487600C26091 /* LaunchScreen.storyboard */,
 				BBEEF8B6219B487600C26091 /* Info.plist */,
+				BBEEF8A7219B487500C26091 /* AppDelegate.swift */,
 				BBEEF8AE219B487500C26091 /* Fallout_76_Survival_Guide.xcdatamodeld */,
+				BBC6755C21C84321002FF910 /* PersistanceService.swift */,
 			);
 			path = "Fallout 76 Survival Guide";
 			sourceTree = "<group>";
@@ -234,7 +261,7 @@
 			files = (
 				BBEEF8B5219B487600C26091 /* LaunchScreen.storyboard in Resources */,
 				BBEEF8B2219B487600C26091 /* Assets.xcassets in Resources */,
-				BBEEF8AD219B487500C26091 /* Main.storyboard in Resources */,
+				BB736F7721A9D26400CA264C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +286,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBEEF8AA219B487500C26091 /* ViewController.swift in Sources */,
+				BB5D869921C83BA600D3EFE9 /* PlanCell.swift in Sources */,
+				BBC6756521C84816002FF910 /* PlanItems+CoreDataProperties.swift in Sources */,
+				BB86E84321C5E09A004A3F64 /* Plan.swift in Sources */,
+				BB736F7921A9D90600CA264C /* CardCell.swift in Sources */,
+				BBE8488C21ACB2C000F58086 /* DetailViewContollerViewController.swift in Sources */,
 				BBEEF8A8219B487500C26091 /* AppDelegate.swift in Sources */,
+				BB86E84121C5DFE7004A3F64 /* PlansViewController.swift in Sources */,
+				BBC6756421C84816002FF910 /* PlanItems+CoreDataClass.swift in Sources */,
 				BBEEF8B0219B487500C26091 /* Fallout_76_Survival_Guide.xcdatamodeld in Sources */,
+				BBEA78A6219CF1800034639D /* Perk.swift in Sources */,
+				BB736F7521A9D1F900CA264C /* PerkCardTableViewController.swift in Sources */,
+				BBC6755D21C84321002FF910 /* PersistanceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BBEEF8AB219B487500C26091 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBEEF8AC219B487500C26091 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BBEEF8B3219B487600C26091 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MakStudios.Fallout-76-Survival-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -464,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MakStudios.Fallout-76-Survival-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
