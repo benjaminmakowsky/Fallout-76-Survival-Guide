@@ -4,8 +4,15 @@
         <attribute name="isFound" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WeaponItems" representedClassName="WeaponItems" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PlanItems" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="PlanItems" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="WeaponItems" positionX="-63" positionY="9" width="128" height="90"/>
     </elements>
 </model>

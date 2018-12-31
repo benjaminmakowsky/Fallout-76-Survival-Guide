@@ -18,6 +18,7 @@ extension PlanItems {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var type: String?
     @NSManaged public var location: String?
     @NSManaged public var isFound: Bool
 

@@ -15,18 +15,16 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    //Variables
+    //--------------Variables-----------------//
     var planList: [PlanItems] = []
     var filteredPlans: [PlanItems] = []
-    //var planListTest = Plan.loadBuildingPlans()
     var isSearching = false
     
     
     //Create a fetch request to get the plan plan data
     let fetchRequest: NSFetchRequest<PlanItems> = PlanItems.fetchRequest()
-    
-   //Create a seperate fetch request for each type of plan
-    
+    //Create a seperate fetch request for each type of plan
+    //let weaponsRequest: NSFetchRequest<WeaponItems> = WeaponItems.fetchRequest()
     
     
     override func viewDidLoad() {
@@ -44,10 +42,44 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
         } catch  {}
         print(planList.count)
         
+        //Used to add changes and plans from code
+        if (planList.count != Plan.loadBuildingPlans().count && planList.count > 0){
+            for object in Plan.loadBuildingPlans(){
+                //Break if numbers are now synced
+                if(planList.count == Plan.loadBuildingPlans().count){
+                    break
+                }
+                var hasMatch = false
+                for item in planList{
+                    if(item.name == object.planName){
+                        hasMatch = true
+                    }
+                }
+                //If no match is found add to context
+                if (!hasMatch){
+                    let plan = PlanItems(context: PersistenceService.context)
+                    
+                    //Populate the plans items
+                    plan.isFound = false
+                    plan.name = object.planName
+                    plan.location = object.planLocation
+                    
+                    //Load and save item
+                    planList.append(plan)
+                }
+            }
+            do{
+                try PersistenceService.context.save()
+            }catch{}
+        }
+        
         //Check for an empty plan list and if it is empty load it from coad and save to device
-        if planList.isEmpty {
+        if (planList.isEmpty) {
+            
+            
             for item in Plan.loadBuildingPlans() {
                 
+                print("loading plans")
                 //Create a plan object that can be stored into the PersistanceService context container
                 let plan = PlanItems(context: PersistenceService.context)
                 
@@ -61,10 +93,18 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
                 PersistenceService.saveContext()
             }
         }
+        //Used to add changes and plans from code
+        if (planList.count != Plan.loadBuildingPlans().count){
+            for object in planList{
+                PersistenceService.context.delete(object)
+            }
+            do{
+                try PersistenceService.context.save()
+            }catch{}
+        }
     }
 
-    
-    //Searchbar functionality
+    //-------------Searchbar functionality-----------------//
     func setNavBar() {
         searchBar.showsCancelButton = true
         searchBar.placeholder = "Enter Name Of Plan"
@@ -87,6 +127,12 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         search()
     }
+    
+    //------------------Buttons-------------------//
+    @IBAction func weaponsBtn(_ sender: Any) {
+        
+    }
+    
 }
 
 
