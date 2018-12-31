@@ -13,7 +13,7 @@ class PlansViewController: UIViewController {
 
     //Interfaces
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var searchBar: UISearchBar! //Add search function
     
     //Variables
     var planList: [PlanItems] = []
