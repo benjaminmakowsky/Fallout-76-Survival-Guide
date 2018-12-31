@@ -9,15 +9,19 @@
 import UIKit
 import CoreData
 
-class PlansViewController: UIViewController {
+class PlansViewController: UIViewController, UISearchBarDelegate {
 
     //Interfaces
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar! //Add search function
+    @IBOutlet weak var searchBar: UISearchBar!
     
     //Variables
     var planList: [PlanItems] = []
+    var filteredPlans: [PlanItems] = []
     //var planListTest = Plan.loadBuildingPlans()
+    var isSearching = false
+    
+    
     //Create a fetch request to get the plan plan data
     let fetchRequest: NSFetchRequest<PlanItems> = PlanItems.fetchRequest()
     
@@ -40,7 +44,7 @@ class PlansViewController: UIViewController {
         } catch  {}
         print(planList.count)
         
-        //Check for an empyt plan list and if it is empty load it from coad and save to device
+        //Check for an empty plan list and if it is empty load it from coad and save to device
         if planList.isEmpty {
             for item in Plan.loadBuildingPlans() {
                 
@@ -57,22 +61,35 @@ class PlansViewController: UIViewController {
                 PersistenceService.saveContext()
             }
         }
-        
-        //Reload the data to the table
-        //tableView.reloadData()
-        
-        // Do any additional setup after loading the view.
-       
     }
 
-}
-
-  func setNavBar() {
-        
+    
+    //Searchbar functionality
+    func setNavBar() {
         searchBar.showsCancelButton = true
         searchBar.placeholder = "Enter Name Of Plan"
         searchBar.delegate = self
     }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearching = false;
+        searchBar.endEditing(true)
+        tableView.reloadData()
+    }
+    
+    func search(){
+        isSearching = true
+        filteredPlans = planList.filter{$0.name!.lowercased().contains(searchBar.text!.lowercased())}
+        searchBar.endEditing(true)
+        tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        search()
+    }
+}
+
+
 
 
 extension PlansViewController: UITableViewDataSource, UITableViewDelegate{
@@ -81,7 +98,11 @@ extension PlansViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //print("Counting Plan Items: " + String(planList.count))
-        return planList.count
+        if(isSearching){
+            return filteredPlans.count
+        }else{
+            return planList.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -93,7 +114,11 @@ extension PlansViewController: UITableViewDataSource, UITableViewDelegate{
         //The current plan item
         //print("Loading Plans")
         var plan: PlanItems
-        plan = planList[indexPath.row]
+        if(isSearching){
+            plan = filteredPlans[indexPath.row]
+        }else{
+            plan = planList[indexPath.row]
+        }
         
         //Load the cell
         print("Loading cells")
