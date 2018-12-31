@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB3890DD21DA9CF500823A8E /* QuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3890DC21DA9CF500823A8E /* QuestViewController.swift */; };
+		BB3890DF21DA9D1E00823A8E /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3890DE21DA9D1E00823A8E /* Quest.swift */; };
+		BB3890E121DA9D3600823A8E /* QuestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3890E021DA9D3600823A8E /* QuestCell.swift */; };
 		BB5D869921C83BA600D3EFE9 /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5D869821C83BA600D3EFE9 /* PlanCell.swift */; };
 		BB736F7521A9D1F900CA264C /* PerkCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB736F7421A9D1F900CA264C /* PerkCardTableViewController.swift */; };
 		BB736F7721A9D26400CA264C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB736F7621A9D26400CA264C /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB3890DC21DA9CF500823A8E /* QuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewController.swift; sourceTree = "<group>"; };
+		BB3890DE21DA9D1E00823A8E /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		BB3890E021DA9D3600823A8E /* QuestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestCell.swift; sourceTree = "<group>"; };
 		BB5D869821C83BA600D3EFE9 /* PlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
 		BB736F7421A9D1F900CA264C /* PerkCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkCardTableViewController.swift; sourceTree = "<group>"; };
 		BB736F7621A9D26400CA264C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				BB736F7621A9D26400CA264C /* Main.storyboard */,
+				BB3890DC21DA9CF500823A8E /* QuestViewController.swift */,
+				BB3890DE21DA9D1E00823A8E /* Quest.swift */,
+				BB3890E021DA9D3600823A8E /* QuestCell.swift */,
 				BB736F7421A9D1F900CA264C /* PerkCardTableViewController.swift */,
 				BBE8488B21ACB2C000F58086 /* DetailViewContollerViewController.swift */,
 				BB736F7821A9D90600CA264C /* CardCell.swift */,
@@ -286,10 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3890DF21DA9D1E00823A8E /* Quest.swift in Sources */,
 				BB5D869921C83BA600D3EFE9 /* PlanCell.swift in Sources */,
+				BB3890DD21DA9CF500823A8E /* QuestViewController.swift in Sources */,
 				BBC6756521C84816002FF910 /* PlanItems+CoreDataProperties.swift in Sources */,
 				BB86E84321C5E09A004A3F64 /* Plan.swift in Sources */,
 				BB736F7921A9D90600CA264C /* CardCell.swift in Sources */,
+				BB3890E121DA9D3600823A8E /* QuestCell.swift in Sources */,
 				BBE8488C21ACB2C000F58086 /* DetailViewContollerViewController.swift in Sources */,
 				BBEEF8A8219B487500C26091 /* AppDelegate.swift in Sources */,
 				BB86E84121C5DFE7004A3F64 /* PlansViewController.swift in Sources */,
