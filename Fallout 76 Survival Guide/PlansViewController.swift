@@ -13,7 +13,7 @@ class PlansViewController: UIViewController {
 
     //Interfaces
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var searchBar: UISearchBar! //Add search function
     
     //Variables
     var planList: [PlanItems] = []
@@ -27,6 +27,9 @@ class PlansViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavBar()
+      
+      
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -63,6 +66,14 @@ class PlansViewController: UIViewController {
     }
 
 }
+
+  func setNavBar() {
+        
+        searchBar.showsCancelButton = true
+        searchBar.placeholder = "Enter Name Of Plan"
+        searchBar.delegate = self
+    }
+
 
 extension PlansViewController: UITableViewDataSource, UITableViewDelegate{
     
