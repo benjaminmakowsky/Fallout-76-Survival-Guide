@@ -183,14 +183,6 @@ class PerkCardTableViewController: UIViewController, UISearchBarDelegate {
 }
 
 
-
-
-
-
-
-
-
-
 //Extend the use of a table view
 extension PerkCardTableViewController: UITableViewDataSource, UITableViewDelegate{
     

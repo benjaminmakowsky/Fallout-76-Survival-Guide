@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestViewController: UIViewController {
+class QuestViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -20,7 +20,7 @@ class QuestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavBar()
+        //setNavBar()
         
         //Which list of quests to initially load
         quests = Quest.loadQuests()
@@ -29,11 +29,11 @@ class QuestViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    func setNavBar() {      
+    /*func setNavBar() {
         searchBar.showsCancelButton = true
         searchBar.placeholder = "Enter Name or Description"
         searchBar.delegate = self
-    }
+    }*/
     
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
@@ -43,7 +43,7 @@ class QuestViewController: UIViewController {
     }
     func search(){
         isSearching = true
-        filteredQuests = quests.filter{$0.title.lowercased().contains(searchBar.text!.lowercased())}
+        filteredQuests = quests.filter{$0.name.lowercased().contains(searchBar.text!.lowercased())}
         searchBar.endEditing(true)
         tableView.reloadData()
     }
@@ -51,25 +51,14 @@ class QuestViewController: UIViewController {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         search()
     }
-    
-   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //Identify which segue is being used
-        if segue.identifier == "QuestToDetail" {
-            
-            let destVC = segue.destination as! DetailViewContollerViewController
-            destVC.quest = sender as? Quest
-        }
-    }*/
-    
-    
+
     
     func sortByName(type: String) {
         if type == "Increasing"{
-            quests.sort(by: {$0.title < $1.title})
+            quests.sort(by: {$0.name < $1.name})
             tableView.reloadData()
         }else{
-            quests.sort(by: {$0.title > $1.title})
+            quests.sort(by: {$0.name > $1.name})
             tableView.reloadData()
         }
     }
@@ -79,7 +68,7 @@ class QuestViewController: UIViewController {
 
 
 //Extend the use of a table view
-extension PerkCardTableViewController: UITableViewDataSource, UITableViewDelegate{
+extension QuestViewController: UITableViewDataSource, UITableViewDelegate{
     
     //Determine how many rows are in the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -98,12 +87,12 @@ extension PerkCardTableViewController: UITableViewDataSource, UITableViewDelegat
         var quest: Quest
         //Used to determine how to fill table view
         if isSearching{
-             quest = filteredCards[indexPath.row]
+            quest = filteredQuests[indexPath.row]
         }else{
              quest = quests[indexPath.row]
         }
         
-        cell.setTitle(name: quest.title)
+        cell.setTitle(title: quest.name)
         return cell
     }
 
@@ -118,7 +107,7 @@ extension PerkCardTableViewController: UITableViewDataSource, UITableViewDelegat
         }
         performSegue(withIdentifier: "MasterToDetail", sender: perk)
     }
-    /*
+    */
     
 }
 
