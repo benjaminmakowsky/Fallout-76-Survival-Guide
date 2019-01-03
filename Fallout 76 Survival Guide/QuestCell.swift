@@ -21,4 +21,8 @@ class QuestCell: UITableViewCell {
     func setImage(image: UIImage){
         questImage.image = image
     }
+
+	func setRewards(){
+        
+    }
 }
