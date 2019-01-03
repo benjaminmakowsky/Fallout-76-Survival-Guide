@@ -36,15 +36,21 @@ class Quest {
         rewards.append(contentsOf: stuff)
     }
 
+	init(title: String, pic: String, stuff: [String]){
+        name = title
+        image = UIImage(named: pic)!
+        rewards.append(contentsOf: stuff)
+    }
+
 	static func loadQuests() -> [Quest] {
 		var questList: [Quest] = []
 
 		//----------------Vault 76--------------------------//
-        questList.append(Quest(title: "Reclamation Day", pic: "Reclamation_Day", parts: ["Discover Overseer's Mission", "Play or Eject Overseer's holotape", "Leave Vault 76"]))
-        questList.append(Quest(title: "First Contact", pic: "First_Contact", parts: ["Track Down the Overseer", "Find the Overseer's Camp", "Find the Overseer in Flatwoods", "Register as a Volunteer"]))
+        questList.append(Quest(title: "Reclamation Day", pic: "Reclamation_Day", parts: ["Discover Overseer's Mission", "Play or Eject Overseer's holotape", "Leave Vault 76"], stuff: ["Ammo", "Aid Item" ]))
+        questList.append(Quest(title: "First Contact", pic: "First_Contact", parts: ["Track Down the Overseer", "Find the Overseer's Camp", "Find the Overseer in Flatwoods", "Register as a Volunteer"], stuff: ["Hatchet", "Paramedic Jumpsuit"]))
 
 		//--------------Responders-------------------------//
-        questList.append(Quest(title: "Thirst Things First", pic: "Responders_quest", parts: ["Locate Kesha McDermott", "Search for Kesha along the nearby river", "Retrieve the Water Testing Kit from Kesha McDermott", "Test a sample of water from the river", "Taste a sample of water from Flatwood's Water Pumps", "Analyze the Water Testing Kit's results in Kesha's lab", "Boil water using Dirty Water and Wood fuel", "Check in with the Self-Serve Kiosk"]))
+        questList.append(Quest(title: "Thirst Things First", pic: "Responders_quest", parts: ["Locate Kesha McDermott", "Search for Kesha along the nearby river", "Retrieve the Water Testing Kit from Kesha McDermott", "Test a sample of water from the river", "Taste a sample of water from Flatwood's Water Pumps", "Analyze the Water Testing Kit's results in Kesha's lab", "Boil water using Dirty Water and Wood fuel", "Check in with the Self-Serve Kiosk"], stuff: ["Chemistry Workbench Plan", "Armor"]))
             
         questList.append(Quest(title: "Second Helpings", pic: "Responders_quest", parts: ["Find Delbert Winters in Flatwoods", "Look for Delbert Winters at his home", "Search for training instructions around Delbert\'s house.", "Cook a Ribeye Steak", "Check in with the Self-Serve Kiosk", "Contact the Responders using the Database"]))
 		questList.append(Quest(title: "Final Departure", pic: "Final_Departure", parts: ["Investigate Morgantown Airport", "Learn the fate of the Responders", "Listen to Overseer's Log - Morgantown", "Learn about the Inoculation Project"]))
