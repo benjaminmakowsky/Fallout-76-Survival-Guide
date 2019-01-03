@@ -7,27 +7,32 @@
 //
 
 import Foundation
+import UIKit
 
 class Quest {
     
+    var image: UIImage
     var name = ""
     var rewards: [String] = []
     var steps: [String] = []
     
-	init(title: String) {
+    init(title: String, pic: String) {
+        image = UIImage(named: pic)!
         name = title
         rewards.append("None")
         steps.append("None")
     }
 
-    init(title: String, parts: [String]) {
+    init(title: String, pic: String, parts: [String]) {
         name = title
+        image = UIImage(named: pic)!
         rewards.append("None")
         steps.append(contentsOf: parts)
     }
     
-    init(title: String, parts: [String], stuff: [String]){
+    init(title: String, pic: String, parts: [String], stuff: [String]){
         name = title
+        image = UIImage(named: pic)!
         rewards.append(contentsOf: stuff)
     }
 
@@ -35,43 +40,43 @@ class Quest {
 		var questList: [Quest] = []
 
 		//----------------Vault 76--------------------------//
-		questList.append(Quest(title: "Reclamation Day", parts: ["Discover Overseer's Mission", "Play or Eject Overseer's holotape", "Leave Vault 76"]))
-        questList.append(Quest(title: "First Contact", parts: ["Track Down the Overseer", "Find the Overseer's Camp", "Find the Overseer in Flatwoods", "Register as a Volunteer"]))
+        questList.append(Quest(title: "Reclamation Day", pic: "Reclamation_Day", parts: ["Discover Overseer's Mission", "Play or Eject Overseer's holotape", "Leave Vault 76"]))
+        questList.append(Quest(title: "First Contact", pic: "First_Contact", parts: ["Track Down the Overseer", "Find the Overseer's Camp", "Find the Overseer in Flatwoods", "Register as a Volunteer"]))
 
 		//--------------Responders-------------------------//
-        questList.append(Quest(title: "Thirst Things First", parts: ["Locate Kesha McDermott", "Search for Kesha along the nearby river", "Retrieve the Water Testing Kit from Kesha McDermott", "Test a sample of water from the river", "Taste a sample of water from Flatwood's Water Pumps", "Analyze the Water Testing Kit's results in Kesha's lab", "Boil water using Dirty Water and Wood fuel", "Check in with the Self-Serve Kiosk"]))
+        questList.append(Quest(title: "Thirst Things First", pic: "Responders_quest", parts: ["Locate Kesha McDermott", "Search for Kesha along the nearby river", "Retrieve the Water Testing Kit from Kesha McDermott", "Test a sample of water from the river", "Taste a sample of water from Flatwood's Water Pumps", "Analyze the Water Testing Kit's results in Kesha's lab", "Boil water using Dirty Water and Wood fuel", "Check in with the Self-Serve Kiosk"]))
             
-        questList.append(Quest(title: "Second Helpings", parts: ["Find Delbert Winters in Flatwoods", "Look for Delbert Winters at his home", "Search for training instructions around Delbert\'s house.", "Cook a Ribeye Steak", "Check in with the Self-Serve Kiosk", "Contact the Responders using the Database"]))
-		questList.append(Quest(title: "Final Departure", parts: ["Investigate Morgantown Airport", "Learn the fate of the Responders", "Listen to Overseer's Log - Morgantown", "Learn about the Inoculation Project"]))
+        questList.append(Quest(title: "Second Helpings", pic: "Responders_quest", parts: ["Find Delbert Winters in Flatwoods", "Look for Delbert Winters at his home", "Search for training instructions around Delbert\'s house.", "Cook a Ribeye Steak", "Check in with the Self-Serve Kiosk", "Contact the Responders using the Database"]))
+		questList.append(Quest(title: "Final Departure", pic: "Final_Departure", parts: ["Investigate Morgantown Airport", "Learn the fate of the Responders", "Listen to Overseer's Log - Morgantown", "Learn about the Inoculation Project"]))
         
-		questList.append(Quest(title: "An Ounce of Prevention", parts: ["Study Doctor Hudson's Research", "Collect a Type-T Fuse", "Collect a blood sample from a Mole Rat", "Collect a blood sample from a Feral Ghoul", "Collect a blood sample from a wolf", "Load blood samples into the centrifuge", "Install the Type-T Fuse", "Use the sympto-matic to administer the vaccine"]))
+		questList.append(Quest(title: "An Ounce of Prevention", pic: "RS03_Inoculation", parts: ["Study Doctor Hudson's Research", "Collect a Type-T Fuse", "Collect a blood sample from a Mole Rat", "Collect a blood sample from a Feral Ghoul", "Collect a blood sample from a wolf", "Load blood samples into the centrifuge", "Install the Type-T Fuse", "Use the sympto-matic to administer the vaccine"]))
 		
 		//TODO: Add side quest objectives
-		questList.append(Quest(title: "Into the Fire", parts: ["Explore the Charleston Fire Department", "Join the Fire Breathers", "Pass the Knowledge Exam", "Complete Physical Exam", "Initiate the final exam site", "Head to the final exam site", "Collect your kit", "Listen to the Fire Breathers Final Exam Briefing holotape", "Activate the emergency beacon", "Return to Bernie", "Register with the Fire Breather's computer system", "Listen to the priority message"]))
-		questList.append(Quest(title: "The Missing Link", parts: ["Follow Madigan's Trail", "Complete Rose's Quests to gain Her Trust", "Retrieve the Uplink", "Go to the Free States Bunker"]))
+		questList.append(Quest(title: "Into the Fire", pic: "Responders_quest", parts: ["Explore the Charleston Fire Department", "Join the Fire Breathers", "Pass the Knowledge Exam", "Complete Physical Exam", "Initiate the final exam site", "Head to the final exam site", "Collect your kit", "Listen to the Fire Breathers Final Exam Briefing holotape", "Activate the emergency beacon", "Return to Bernie", "Register with the Fire Breather's computer system", "Listen to the priority message"]))
+		questList.append(Quest(title: "The Missing Link", pic: "The_Missing_Link", parts: ["Follow Madigan's Trail", "Complete Rose's Quests to gain Her Trust", "Retrieve the Uplink", "Go to the Free States Bunker"]))
 
 		//----------------Raiders-------------------------//
-		questList.append(Quest(title: "Signal Strength"))
-		questList.append(Quest(title: "Flavors of Mayhem"))
-		questList.append(Quest(title: "Key to the past"))
+		questList.append(Quest(title: "Signal Strength", pic: "Signal_Strength"))
+		questList.append(Quest(title: "Flavors of Mayhem", pic: "Flavors_of_Mayhem"))
+		questList.append(Quest(title: "Key to the past", pic: "Key_to_the_Past"))
 
 		//---------------Free States-----------------------//
-		questList.append(Quest(title: "Early Warnings"))
-		questList.append(Quest(title: "Reassembly Required"))
-		questList.append(Quest(title: "Coming to Fruition"))
+		questList.append(Quest(title: "Early Warnings", pic: "Icon_Fo76_Free_States_quest"))
+		questList.append(Quest(title: "Reassembly Required", pic: "Icon_Fo76_Free_States_quest"))
+		questList.append(Quest(title: "Coming to Fruition", pic: "Icon_Fo76_Free_States_quest"))
 
 		//---------------Brotherhood of Steel-------------//
-		questList.append(Quest(title: "Defiance has Fallen"))
-		questList.append(Quest(title: "Recruitment Blues"))
-		questList.append(Quest(title: "Back to Basic"))
-		questList.append(Quest(title: "Belly of the Beast"))
+		questList.append(Quest(title: "Defiance has Fallen", pic: "Icon_Fo76_Brotherhood_quest"))
+		questList.append(Quest(title: "Recruitment Blues", pic: "Icon_Fo76_Brotherhood_quest"))
+		questList.append(Quest(title: "Back to Basic", pic: "Icon_Fo76_Brotherhood_quest"))
+		questList.append(Quest(title: "Belly of the Beast", pic: "Icon_Fo76_Brotherhood_quest"))
 
 		//--------------Enclave--------------------------//
-		questList.append(Quest(title: "Uncle Sam"))
-		questList.append(Quest(title: "Bunker Buster"))
-		questList.append(Quest(title: "One of Us"))
-		questList.append(Quest(title: "Officer on Deck"))
-		questList.append(Quest(title: "I am Become Death"))
+		questList.append(Quest(title: "Uncle Sam", pic: "Icon_Fo76_Enclave_quest"))
+		questList.append(Quest(title: "Bunker Buster", pic: "Bunker_Buster"))
+		questList.append(Quest(title: "One of Us", pic: "One_of_Us"))
+		questList.append(Quest(title: "Officer on Deck", pic: "Icon_Fo76_Enclave_quest"))
+		questList.append(Quest(title: "I am Become Death", pic: "I_Am_Become_Death"))
 		
 		return questList
 	}

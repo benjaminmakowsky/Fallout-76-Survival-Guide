@@ -20,7 +20,7 @@ class QuestViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setNavBar()
+        navigationItem.title = "Main Quests"
         
         //Which list of quests to initially load
         quests = Quest.loadQuests()
@@ -28,12 +28,6 @@ class QuestViewController: UIViewController, UISearchBarDelegate {
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
-    /*func setNavBar() {
-        searchBar.showsCancelButton = true
-        searchBar.placeholder = "Enter Name or Description"
-        searchBar.delegate = self
-    }*/
     
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
@@ -93,6 +87,7 @@ extension QuestViewController: UITableViewDataSource, UITableViewDelegate{
         }
         
         cell.setTitle(title: quest.name)
+        cell.setImage(image: quest.image)
         return cell
     }
 

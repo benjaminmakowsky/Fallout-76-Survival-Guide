@@ -12,8 +12,13 @@ import UIKit
 class QuestCell: UITableViewCell {
     
     @IBOutlet weak var questTitle: UILabel!
+    @IBOutlet weak var questImage: UIImageView!
     
     func setTitle(title: String) {
         questTitle.text = title
+    }
+    
+    func setImage(image: UIImage){
+        questImage.image = image
     }
 }
