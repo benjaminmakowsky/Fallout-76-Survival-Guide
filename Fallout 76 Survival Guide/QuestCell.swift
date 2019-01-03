@@ -11,6 +11,7 @@ import UIKit
 
 class QuestCell: UITableViewCell {
     
+    //Variables
     @IBOutlet weak var questTitle: UILabel!
     @IBOutlet weak var questImage: UIImageView!
     @IBOutlet weak var firstReward: UILabel!
