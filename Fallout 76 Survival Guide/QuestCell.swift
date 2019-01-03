@@ -25,7 +25,8 @@ class QuestCell: UITableViewCell {
         questImage.image = image
     }
 
-	func setRewards(){
-        
+    func setRewards(rewards: [String]){
+        firstReward.text = "Rewards: " + rewards[0]
+        secondReward.text = "Rewards: " + rewards[1]
     }
 }

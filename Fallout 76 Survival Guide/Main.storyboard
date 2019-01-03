@@ -463,7 +463,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lx-nF-bSM">
-                                                    <rect key="frame" x="110" y="38" width="254" height="13"/>
+                                                    <rect key="frame" x="110" y="38" width="304" height="13"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="13" id="u7n-Tw-sku"/>
                                                     </constraints>
@@ -472,7 +472,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIi-8T-MHm">
-                                                    <rect key="frame" x="110" y="56" width="254" height="13"/>
+                                                    <rect key="frame" x="110" y="56" width="304" height="13"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="13" id="HVa-2R-Tka"/>
                                                     </constraints>
@@ -493,7 +493,7 @@
                                                 <constraint firstItem="5lx-nF-bSM" firstAttribute="leading" secondItem="X9n-DN-llj" secondAttribute="leading" id="f9x-GM-tBo"/>
                                                 <constraint firstAttribute="bottom" secondItem="wsN-SF-Tn2" secondAttribute="bottom" constant="5" id="fL9-BX-kxU"/>
                                                 <constraint firstItem="wsN-SF-Tn2" firstAttribute="leading" secondItem="V7o-wA-fsd" secondAttribute="leading" constant="5" id="guN-YZ-lKG"/>
-                                                <constraint firstItem="5lx-nF-bSM" firstAttribute="trailing" secondItem="X9n-DN-llj" secondAttribute="trailing" id="iq0-Dk-I9S"/>
+                                                <constraint firstItem="5lx-nF-bSM" firstAttribute="trailing" secondItem="X9n-DN-llj" secondAttribute="trailing" constant="50" id="iq0-Dk-I9S"/>
                                                 <constraint firstItem="wsN-SF-Tn2" firstAttribute="top" secondItem="V7o-wA-fsd" secondAttribute="top" constant="5" id="pdx-vj-exT"/>
                                             </constraints>
                                         </tableViewCellContentView>

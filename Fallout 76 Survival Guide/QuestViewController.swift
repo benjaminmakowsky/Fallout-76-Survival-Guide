@@ -88,6 +88,7 @@ extension QuestViewController: UITableViewDataSource, UITableViewDelegate{
         
         cell.setTitle(title: quest.name)
         cell.setImage(image: quest.image)
+        cell.setRewards(rewards: quest.rewards)
         return cell
     }
 

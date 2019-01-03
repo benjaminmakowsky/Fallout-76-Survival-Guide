@@ -62,20 +62,20 @@ class Quest {
 		questList.append(Quest(title: "The Missing Link", pic: "The_Missing_Link", parts: ["Follow Madigan's Trail", "Complete Rose's Quests to gain Her Trust", "Retrieve the Uplink", "Go to the Free States Bunker"], stuff: ["Random Item", "Photo Frame"]))
 
 		//----------------Raiders-------------------------//
-		questList.append(Quest(title: "Signal Strength", pic: "Signal_Strength", stuff: ["Chance for Guitar Sword/Death Tambo", "Random Plan"]))
+		questList.append(Quest(title: "Signal Strength", pic: "Signal_Strength", stuff: ["Guitar Sword/Death Tambo Chance", "Random Plan"]))
 		questList.append(Quest(title: "Flavors of Mayhem", pic: "Flavors_of_Mayhem", stuff: ["Black Diamond", "Rose's Syringer"]))
 		questList.append(Quest(title: "Key to the past", pic: "Key_to_the_Past", stuff: ["Full Raider Power Armor", "Random Weapon Plan"]))
 
 		//---------------Free States-----------------------//
-		questList.append(Quest(title: "Early Warnings", pic: "Icon_Fo76_Free_States_quest", stuff: ["",""]))
-		questList.append(Quest(title: "Reassembly Required", pic: "Icon_Fo76_Free_States_quest", stuff: ["",""]))
-		questList.append(Quest(title: "Coming to Fruition", pic: "Icon_Fo76_Free_States_quest", stuff: ["",""]))
+		questList.append(Quest(title: "Early Warnings", pic: "Icon_Fo76_Free_States_quest", stuff: ["Stand Fast","Shadowed Combat Armor Mods"]))
+		questList.append(Quest(title: "Reassembly Required", pic: "Icon_Fo76_Free_States_quest", stuff: ["Nuke Mine Recipe","Mirv Frag Grenade Recipe"]))
+		questList.append(Quest(title: "Coming to Fruition", pic: "Icon_Fo76_Free_States_quest", stuff: ["Electrical Arc Plans","Flamethrower Trap Plans"]))
 
 		//---------------Brotherhood of Steel-------------//
-		questList.append(Quest(title: "Defiance has Fallen", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["",""]))
-		questList.append(Quest(title: "Recruitment Blues", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["",""]))
-		questList.append(Quest(title: "Back to Basic", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["",""]))
-		questList.append(Quest(title: "Belly of the Beast", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["",""]))
+		questList.append(Quest(title: "Defiance has Fallen", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["Gatling Gun","BOS Underarmor Mod"]))
+		questList.append(Quest(title: "Recruitment Blues", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["Ultracite Laser Pistol","BOS Field Scribe Outfit"]))
+		questList.append(Quest(title: "Back to Basic", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["Ammo","Aid Item"]))
+		questList.append(Quest(title: "Belly of the Beast", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["Ultracite Power Armor","Weapon Plan"]))
 
 		//--------------Enclave--------------------------//
 		questList.append(Quest(title: "Uncle Sam", pic: "Icon_Fo76_Enclave_quest", stuff: ["",""]))
