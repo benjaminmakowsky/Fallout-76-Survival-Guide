@@ -13,6 +13,8 @@ class QuestCell: UITableViewCell {
     
     @IBOutlet weak var questTitle: UILabel!
     @IBOutlet weak var questImage: UIImageView!
+    @IBOutlet weak var firstReward: UILabel!
+    @IBOutlet weak var secondReward: UILabel!
     
     func setTitle(title: String) {
         questTitle.text = title
