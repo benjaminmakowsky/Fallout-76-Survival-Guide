@@ -350,7 +350,7 @@ class Perk {
 
         intelligenceArray.append(Perk(title: "First Aid", levelAttainable: "2", descriptions: ["Stimpaks restore 15% more lost Health.", "Stimpaks restore 30% more lost Health.", "Stimpaks restore 45% more lost Health."]))
 
-        intelligenceArray.append(Perk(title: "Fix it", levelAttainable: "27", descriptions: ["You can repair armor and Power Armor to 130% of normal maximum condition.", "You can repair armor and Power Armor to 130% of normal maximum condition.", "You can repair armor and Power Armor to 130% of normal maximum condition."]))
+        intelligenceArray.append(Perk(title: "Fix it", levelAttainable: "27", descriptions: ["You can repair armor and Power Armor to 130% of normal maximum condition.", "You can repair armor and Power Armor to 160% of normal maximum condition.", "You can repair armor and Power Armor to 200% of normal maximum condition."]))
 
         intelligenceArray.append(Perk(title: "Gunsmith", levelAttainable: "11", descriptions: ["Guns break 10% slower and you can now craft Tier 1 guns (Plans required).", "Guns break 20% slower and you can now craft Tier 2 guns (Plans required).", "Guns break 30% slower and you can now craft Tier 3 guns (Plans required).", "Guns break 40% slower and you can now craft Tier 4 guns (Plans required).", "Guns break 50% slower and you can now craft Tier 5 guns (Plans required)."]))
 

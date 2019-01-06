@@ -78,11 +78,11 @@ class Quest {
 		questList.append(Quest(title: "Belly of the Beast", pic: "Icon_Fo76_Brotherhood_quest", stuff: ["Ultracite Power Armor","Weapon Plan"]))
 
 		//--------------Enclave--------------------------//
-		questList.append(Quest(title: "Uncle Sam", pic: "Icon_Fo76_Enclave_quest", stuff: ["",""]))
-		questList.append(Quest(title: "Bunker Buster", pic: "Bunker_Buster", stuff: ["",""]))
-		questList.append(Quest(title: "One of Us", pic: "One_of_Us", stuff: ["",""]))
-		questList.append(Quest(title: "Officer on Deck", pic: "Icon_Fo76_Enclave_quest", stuff: ["",""]))
-		questList.append(Quest(title: "I am Become Death", pic: "I_Am_Become_Death", stuff: ["",""]))
+		questList.append(Quest(title: "Uncle Sam", pic: "Icon_Fo76_Enclave_quest", stuff: ["Ammo","Aid Item"]))
+		questList.append(Quest(title: "Bunker Buster", pic: "Bunker_Buster", stuff: ["Deathclaw Gauntlet","Armor Mod"]))
+		questList.append(Quest(title: "One of Us", pic: "One_of_Us", stuff: ["Orbital Strike Beacon Schematic","Oribital Scan Beacon Schematic"]))
+		questList.append(Quest(title: "Officer on Deck", pic: "Icon_Fo76_Enclave_quest", stuff: ["Last Bastion","Encalve Officer's Uniform"]))
+		questList.append(Quest(title: "I am Become Death", pic: "I_Am_Become_Death", stuff: ["Gatling Plasma","Random Legendary Item"]))
 		
 		return questList
 	}
