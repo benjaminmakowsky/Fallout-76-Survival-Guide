@@ -336,59 +336,59 @@ class Perk {
         var intelligenceArray: [Perk] = []
         
         
-        intelligenceArray.append(Perk(title: "Armorer", levelAttainable: "15", descriptions: ["You can now craft advanced armor mods. (Plans Required)", "Crafting armor now cost fewer materials.", "Your crafted armor has improved durability."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "StandBy")!,title: "Armorer", levelAttainable: "15", descriptions: ["You can now craft advanced armor mods. (Plans Required)", "Crafting armor now cost fewer materials.", "Your crafted armor has improved durability."]))
 
-        intelligenceArray.append(Perk(title: "Batteries Included", levelAttainable: "28", descriptions: ["Energy weapon ammo weighs 30% less.", "Energy weapon ammo weighs 60% less.", "Energy weapon ammo weighs 90% less."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "StandBy")!,title: "Batteries Included", levelAttainable: "28", descriptions: ["Energy weapon ammo weighs 30% less.", "Energy weapon ammo weighs 60% less.", "Energy weapon ammo weighs 90% less."]))
 
-        intelligenceArray.append(Perk(title: "Chemist", levelAttainable: "34", descriptions: ["You get double the quantity when you craft chems!"]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Fo76_Chemist")!,title: "Chemist", levelAttainable: "34", descriptions: ["You get double the quantity when you craft chems!"]))
 
-        intelligenceArray.append(Perk(title: "Contractor", levelAttainable: "18", descriptions: ["Crafting workshop items now costs 25% fewer materials.", "Crafting workshop items now costs 50% fewer materials."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Contractor_perk")!,title: "Contractor", levelAttainable: "18", descriptions: ["Crafting workshop items now costs 25% fewer materials.", "Crafting workshop items now costs 50% fewer materials."]))
 
-        intelligenceArray.append(Perk(title: "Demolition Expert", levelAttainable: "10", descriptions: ["Your explosives do +20% damage", "Your explosives do +40% damage", "Your explosives do +60% damage", "Your explosives do +80% damage", "Your explosives do +100% damage"]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "StandBy")!,title: "Demolition Expert", levelAttainable: "10", descriptions: ["Your explosives do +20% damage", "Your explosives do +40% damage", "Your explosives do +60% damage", "Your explosives do +80% damage", "Your explosives do +100% damage"]))
 
-        intelligenceArray.append(Perk(title: "Expert Hacker", levelAttainable: "22", descriptions: ["Gain +1 hacking skill, and terminal lock-out time is reduced."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Expert_Hacker")!,title: "Expert Hacker", levelAttainable: "22", descriptions: ["Gain +1 hacking skill, and terminal lock-out time is reduced."]))
 
-        intelligenceArray.append(Perk(title: "First Aid", levelAttainable: "2", descriptions: ["Stimpaks restore 15% more lost Health.", "Stimpaks restore 30% more lost Health.", "Stimpaks restore 45% more lost Health."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Fo76_First_Aid_perk")!,title: "First Aid", levelAttainable: "2", descriptions: ["Stimpaks restore 15% more lost Health.", "Stimpaks restore 30% more lost Health.", "Stimpaks restore 45% more lost Health."]))
 
-        intelligenceArray.append(Perk(title: "Fix it", levelAttainable: "27", descriptions: ["You can repair armor and Power Armor to 130% of normal maximum condition.", "You can repair armor and Power Armor to 160% of normal maximum condition.", "You can repair armor and Power Armor to 200% of normal maximum condition."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Fix_It_Good")!,title: "Fix it Good", levelAttainable: "27", descriptions: ["You can repair armor and Power Armor to 130% of normal maximum condition.", "You can repair armor and Power Armor to 160% of normal maximum condition.", "You can repair armor and Power Armor to 200% of normal maximum condition."]))
 
-        intelligenceArray.append(Perk(title: "Gunsmith", levelAttainable: "11", descriptions: ["Guns break 10% slower and you can now craft Tier 1 guns (Plans required).", "Guns break 20% slower and you can now craft Tier 2 guns (Plans required).", "Guns break 30% slower and you can now craft Tier 3 guns (Plans required).", "Guns break 40% slower and you can now craft Tier 4 guns (Plans required).", "Guns break 50% slower and you can now craft Tier 5 guns (Plans required)."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Gunsmith")!,title: "Gunsmith", levelAttainable: "11", descriptions: ["Guns break 10% slower and you can now craft Tier 1 guns (Plans required).", "Guns break 20% slower and you can now craft Tier 2 guns (Plans required).", "Guns break 30% slower and you can now craft Tier 3 guns (Plans required).", "Guns break 40% slower and you can now craft Tier 4 guns (Plans required).", "Guns break 50% slower and you can now craft Tier 5 guns (Plans required)."]))
 
-        intelligenceArray.append(Perk(title: "Hacker", levelAttainable: "4", descriptions: ["Gain +1 hacking skill, and terminal lock-out time is reduced."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Hacker")!,title: "Hacker", levelAttainable: "4", descriptions: ["Gain +1 hacking skill, and terminal lock-out time is reduced."]))
 
-        intelligenceArray.append(Perk(title: "Licensed Plumber", levelAttainable: "5", descriptions: ["Your pipe weapons break 30% more slowly and are cheaper to repair.", "Your pipe weapons break 60% more slowly and are cheaper to repair.", "Your pipe weapons break 90% more slowly and are cheaper to repair."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Licensed_Plumber")!,title: "Licensed Plumber", levelAttainable: "5", descriptions: ["Your pipe weapons break 30% more slowly and are cheaper to repair.", "Your pipe weapons break 60% more slowly and are cheaper to repair.", "Your pipe weapons break 90% more slowly and are cheaper to repair."]))
 
-        intelligenceArray.append(Perk(title: "Makeshift Warrior", levelAttainable: "9", descriptions: ["Melee weapons break 10% slower and you can craft Tier 1 melee weapons. (Plans required)", "Melee weapons break 20% slower and you can craft Tier 2 melee weapons. (Plans required)", "Melee weapons break 30% slower and you can craft Tier 3 melee weapons. (Plans required)", "Melee weapons break 40% slower and you can craft Tier 4 melee weapons. (Plans required)", "Melee weapons break 50% slower and you can craft Tier 5 melee weapons. (Plans required)"]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Makeshift_Warrior")!,title: "Makeshift Warrior", levelAttainable: "9", descriptions: ["Melee weapons break 10% slower and you can craft Tier 1 melee weapons. (Plans required)", "Melee weapons break 20% slower and you can craft Tier 2 melee weapons. (Plans required)", "Melee weapons break 30% slower and you can craft Tier 3 melee weapons. (Plans required)", "Melee weapons break 40% slower and you can craft Tier 4 melee weapons. (Plans required)", "Melee weapons break 50% slower and you can craft Tier 5 melee weapons. (Plans required)"]))
 
-        intelligenceArray.append(Perk(title: "Master Hacker", levelAttainable: "38", descriptions: ["Gain +1 hacking skill, and terminal lock-out time is reduced."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Master_Hacker_perk")!,title: "Master Hacker", levelAttainable: "38", descriptions: ["Gain +1 hacking skill, and terminal lock-out time is reduced."]))
 
-        intelligenceArray.append(Perk(title: "Nerd Rage", levelAttainable: "46", descriptions: ["While below 20% Health, gain 20 Damage Resist, 10% damage and 15% AP regen.", "While below 20% Health, gain 30 Damage Resist, 15% damage and 15% AP regen.", "While below 20% Health, gain 40 Damage Resist, 20% damage and 15% AP regen."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Fo76_Nerd_Rage")!,title: "Nerd Rage", levelAttainable: "46", descriptions: ["While below 20% Health, gain 20 Damage Resist, 10% damage and 15% AP regen.", "While below 20% Health, gain 30 Damage Resist, 15% damage and 15% AP regen.", "While below 20% Health, gain 40 Damage Resist, 20% damage and 15% AP regen."]))
 
-        intelligenceArray.append(Perk(title: "Pharmacist", levelAttainable: "6", descriptions: ["RadAway removes 30% more radiation.", "RadAway removes 60% more radiation.", "RadAway removes 90% more radiation."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "FO76_Pharmacist")!,title: "Pharmacist", levelAttainable: "6", descriptions: ["RadAway removes 30% more radiation.", "RadAway removes 60% more radiation.", "RadAway removes 90% more radiation."]))
 
-        intelligenceArray.append(Perk(title: "Portable Power", levelAttainable: "49", descriptions: ["All Power Armor parts and chassis weights are reduced by 25%.", "All Power Armor parts and chassis weights are reduced by 50%.", "All Power Armor parts and chassis weights are reduced by 75%."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Portable_Power")!,title: "Portable Power", levelAttainable: "49", descriptions: ["All Power Armor parts and chassis weights are reduced by 25%.", "All Power Armor parts and chassis weights are reduced by 50%.", "All Power Armor parts and chassis weights are reduced by 75%."]))
 
-        intelligenceArray.append(Perk(title: "Power Smith", levelAttainable: "41", descriptions: ["You can now craft advanced Power Armor suits. (Plans required)", "Crafting Power Armor now cost fewer materials.", "Your crafted Power Armor now has improved durability."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Power_Smith")!,title: "Power Smith", levelAttainable: "41", descriptions: ["You can now craft advanced Power Armor suits. (Plans required)", "Crafting Power Armor now cost fewer materials.", "Your crafted Power Armor now has improved durability."]))
 
-        intelligenceArray.append(Perk(title: "Power Patcher", levelAttainable: "44", descriptions: ["Your Power Armor breaks 20% more slowly and is cheaper to repair.", "Your Power Armor breaks 40% more slowly and is cheaper to repair.", "Your Power Armor breaks 60% more slowly and is cheaper to repair."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Power_Patcher")!,title: "Power Patcher", levelAttainable: "44", descriptions: ["Your Power Armor breaks 20% more slowly and is cheaper to repair.", "Your Power Armor breaks 40% more slowly and is cheaper to repair.", "Your Power Armor breaks 60% more slowly and is cheaper to repair."]))
 
-        intelligenceArray.append(Perk(title: "Power User", levelAttainable: "50", descriptions: ["Fusion Cores now last 30% longer.", "Fusion Cores now last 60% longer.", "Fusion Core duration is now doubled."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "StandBy")!,title: "Power User", levelAttainable: "50", descriptions: ["Fusion Cores now last 30% longer.", "Fusion Cores now last 60% longer.", "Fusion Core duration is now doubled."]))
 
-        intelligenceArray.append(Perk(title: "Robotics Expert", levelAttainable: "48", descriptions: ["Hack an enemy robot for a 25% chance to pacify it.", "Hack an enemy robot for a 50% chance to pacify it.", "Hack an enemy robot for a 75% chance to pacify it."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Fo76_Robotics_Expert")!,title: "Robotics Expert", levelAttainable: "48", descriptions: ["Hack an enemy robot for a 25% chance to pacify it.", "Hack an enemy robot for a 50% chance to pacify it.", "Hack an enemy robot for a 75% chance to pacify it."]))
 
-        intelligenceArray.append(Perk(title: "Science", levelAttainable: "20", descriptions: ["You can now craft energy guns. (Plans required)", "You can craft Rank 1 energy gun mods. (Plans required)"]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Fo76_Science")!,title: "Science", levelAttainable: "20", descriptions: ["You can now craft energy guns. (Plans required)", "You can craft Rank 1 energy gun mods. (Plans required)"]))
 
-        intelligenceArray.append(Perk(title: "Science Expert", levelAttainable: "31", descriptions: ["You can craft Rank 2 energy gun mods. (Plans required)", "Crafting energy guns now costs fewer materials."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "StandBy")!,title: "Science Expert", levelAttainable: "31", descriptions: ["You can craft Rank 2 energy gun mods. (Plans required)", "Crafting energy guns now costs fewer materials."]))
 
-        intelligenceArray.append(Perk(title: "Science Master", levelAttainable: "43", descriptions: ["You can craft Rank 3 energy gun mods. (Plans required)", "Your crafted energy guns have improved durability."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Science_Master")!,title: "Science Master", levelAttainable: "43", descriptions: ["You can craft Rank 3 energy gun mods. (Plans required)", "Your crafted energy guns have improved durability."]))
 
-        intelligenceArray.append(Perk(title: "Scrapper", levelAttainable: "13", descriptions: ["Obtain more components when you scrap weapons and armor."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "StandBy")!,title: "Scrapper", levelAttainable: "13", descriptions: ["Obtain more components when you scrap weapons and armor."]))
 
-        intelligenceArray.append(Perk(title: "Stabilized", levelAttainable: "36", descriptions: ["In Power Armor, heavy guns gain more accuracy and ignore 15% armor.", "In Power Armor, heavy guns gain even more accuracy and ignore 30% armor.", "In Power Armor, heavy guns gain excellent accuracy and ignore 45% armor."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Stabilized")!,title: "Stabilized", levelAttainable: "36", descriptions: ["In Power Armor, heavy guns gain more accuracy and ignore 15% armor.", "In Power Armor, heavy guns gain even more accuracy and ignore 30% armor.", "In Power Armor, heavy guns gain excellent accuracy and ignore 45% armor."]))
 
-        intelligenceArray.append(Perk(title: "Weapon Artisan", levelAttainable: "40", descriptions: ["You can repair any weapon to 130% of normal maximum condition.", "You can repair any weapon to 160% of normal maximum condition.", "You can repair any weapon to 200% of normal maximum condition."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Weapon_Artisan")!,title: "Weapon Artisan", levelAttainable: "40", descriptions: ["You can repair any weapon to 130% of normal maximum condition.", "You can repair any weapon to 160% of normal maximum condition.", "You can repair any weapon to 200% of normal maximum condition."]))
 
-        intelligenceArray.append(Perk(title: "Wrecking Ball", levelAttainable: "29", descriptions: ["You deal +40% damage to workshop objects.", "You deal +80% damage to workshop objects.", "You deal +120% damage to workshop objects."]))
+        intelligenceArray.append(Perk(pic: UIImage(named: "Wrecking_Ball")!,title: "Wrecking Ball", levelAttainable: "29", descriptions: ["You deal +40% damage to workshop objects.", "You deal +80% damage to workshop objects.", "You deal +120% damage to workshop objects."]))
 
 
         return intelligenceArray
