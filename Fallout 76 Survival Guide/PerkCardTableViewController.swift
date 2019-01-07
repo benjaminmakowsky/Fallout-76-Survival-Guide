@@ -20,6 +20,9 @@ class PerkCardTableViewController: UIViewController, UISearchBarDelegate {
     var cards: [Perk] = []
     var filteredCards: [Perk] = []
     var isSearching = false
+    var alphaSort = true
+    var lvlSort = false
+    var invLvlSort = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +64,17 @@ class PerkCardTableViewController: UIViewController, UISearchBarDelegate {
             isSearching = true
             filteredCards = cards.filter{$0.title.lowercased().contains(searchBar.text!.lowercased()) || $0.descriptions[0].lowercased().contains(searchBar.text!.lowercased())}
             searchBar.endEditing(true)
+            
+            
             tableView.reloadData()
+        }
+        //Keep sort pattern
+        if(alphaSort){
+            sortByName(type: "Increasing")
+        }else if(lvlSort){
+            sortByLevel(type: "Increasing")
+        }else if(invLvlSort){
+            sortByLevel(type: "Decreasing")
         }
     }
     
@@ -137,24 +150,33 @@ class PerkCardTableViewController: UIViewController, UISearchBarDelegate {
         
         let levelDecreasing = UIAlertAction(title: "Level: Decreasing", style: .default){ action in
             self.sortByLevel(type: "Decreasing")
+            self.alphaSort = false
+            self.lvlSort = false
+            self.invLvlSort = true
         }
         
         let levelIncreasing = UIAlertAction(title: "Level: Increasing", style: .default){ action in
             self.sortByLevel(type: "Increasing")
+            self.alphaSort = false
+            self.lvlSort = true
+            self.invLvlSort = false
         }
         
         let nameIncreasing = UIAlertAction(title: "Alphabetical", style: .default){ action in
             self.sortByName(type: "Increasing")
+            self.alphaSort = true
+            self.lvlSort = false
+            self.invLvlSort = false
         }
-        
+        /*
         let nameDecreasing = UIAlertAction(title: "Reverse-Alphabetical", style: .default){ action in
             self.sortByName(type: "Decreasing")
         }
-        
+        */
         alert.addAction(levelIncreasing)
         alert.addAction(levelDecreasing)
         alert.addAction(nameIncreasing)
-        alert.addAction(nameDecreasing)
+        //alert.addAction(nameDecreasing)
         alert.addAction(cancel)
         
         present(alert, animated: true, completion: nil)
