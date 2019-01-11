@@ -63,6 +63,7 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
                     plan.isFound = false
                     plan.name = object.planName
                     plan.location = object.planLocation
+                    plan.type = object.planType
                     
                     //Load and save item
                     planList.append(plan)
@@ -87,6 +88,7 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
                 plan.isFound = false
                 plan.name = item.planName
                 plan.location = item.planLocation
+                plan.type = item.planType
                 
                 //Load and save item
                 planList.append(plan)
@@ -130,7 +132,16 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
     
     //------------------Buttons-------------------//
     @IBAction func weaponsBtn(_ sender: Any) {
+        isSearching = true
         
+        filteredPlans = []
+        for object in planList{
+            if (object.type == "weapon")
+            {
+                filteredPlans.append(object)
+            }
+        }
+        tableView.reloadData()
     }
     
 }
