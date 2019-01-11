@@ -239,7 +239,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlJ-Ow-rgr">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="C.A.M.P" id="YPf-ZZ-mSo"/>
+                                    <barButtonItem title="C.A.M.P" id="YPf-ZZ-mSo">
+                                        <connections>
+                                            <action selector="campBtnClicked:" destination="oV5-GY-QjI" id="ffs-Uc-g1h"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Weapons" id="tZ8-cY-Rea">
                                         <connections>
                                             <action selector="weaponsBtn:" destination="oV5-GY-QjI" id="zWZ-IB-0TR"/>

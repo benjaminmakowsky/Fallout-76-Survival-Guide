@@ -136,7 +136,19 @@ class PlansViewController: UIViewController, UISearchBarDelegate {
         
         filteredPlans = []
         for object in planList{
-            if (object.type == "weapon")
+            if (object.type == "weapon" || object.type == "weapon mod")
+            {
+                filteredPlans.append(object)
+            }
+        }
+        tableView.reloadData()
+    }
+    
+    @IBAction func campBtnClicked(_ sender: Any) {
+        isSearching = true
+        filteredPlans = []
+        for object in planList{
+            if (object.type == "camp")
             {
                 filteredPlans.append(object)
             }
@@ -199,7 +211,11 @@ extension PlansViewController: UITableViewDataSource, UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        planList[indexPath.row].isFound = !planList[indexPath.row].isFound
+        if(isSearching){
+            filteredPlans[indexPath.row].isFound = !filteredPlans[indexPath.row].isFound
+        }else{
+            planList[indexPath.row].isFound = !planList[indexPath.row].isFound
+        }
         tableView.reloadData()
         PersistenceService.saveContext()
         
